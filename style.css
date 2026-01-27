@@ -2,75 +2,124 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-    background: #f6f7fb;
-    color: #333;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
 }
 
-/* Navbar */
+/* NAVBAR */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background: white;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: #555;
+    opacity: 0.9;
 }
 
-/* Hero Section */
+nav a:hover {
+    opacity: 1;
+}
+
+/* HERO */
 .hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
     text-align: center;
-    padding: 100px 20px;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 42px;
+}
+
+.hero span {
+    color: #ffd6ff;
 }
 
 .hero p {
-    margin: 15px 0;
-    color: #777;
+    margin: 10px 0 20px;
+    opacity: 0.9;
 }
 
-.hero button {
-    padding: 10px 25px;
-    border: none;
-    background: #6c63ff;
-    color: white;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-/* Cards */
-.card {
+.btn {
     background: white;
-    margin: 30px auto;
-    padding: 30px;
+    color: #764ba2;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* GLASS SECTIONS */
+.glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    margin: 40px auto;
+    padding: 40px;
     width: 80%;
+    border-radius: 20px;
+}
+
+.glass h2 {
+    margin-bottom: 15px;
+}
+
+/* PROJECTS */
+.projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
 }
 
-.card h2 {
-    margin-bottom: 10px;
+.project-card:hover {
+    transform: translateY(-8px);
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    color: #777;
+    opacity: 0.8;
 }
