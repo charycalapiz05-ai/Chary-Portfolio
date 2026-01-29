@@ -163,6 +163,12 @@ function initRecommendationsSlider() {
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     const dotsContainer = document.getElementById('sliderDots');
+    
+    if (!recommendations.length || !prevBtn || !nextBtn || !dotsContainer) {
+        console.log('Slider elements not found');
+        return;
+    }
+    
     let currentSlide = 0;
     
     // Create dots
@@ -182,16 +188,22 @@ function initRecommendationsSlider() {
     }
     
     // Next slide
-    nextBtn.addEventListener('click', () => {
-        currentSlide = (currentSlide + 1) % recommendations.length;
-        updateSlider();
-    });
+    if (nextBtn) {
+        nextBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            currentSlide = (currentSlide + 1) % recommendations.length;
+            updateSlider();
+        });
+    }
     
     // Previous slide
-    prevBtn.addEventListener('click', () => {
-        currentSlide = (currentSlide - 1 + recommendations.length) % recommendations.length;
-        updateSlider();
-    });
+    if (prevBtn) {
+        prevBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            currentSlide = (currentSlide - 1 + recommendations.length) % recommendations.length;
+            updateSlider();
+        });
+    }
     
     // Go to specific slide
     function goToSlide(index) {
