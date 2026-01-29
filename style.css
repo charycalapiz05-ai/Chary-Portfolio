@@ -909,12 +909,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: none;
+    z-index: 10;
+    position: relative;
 }
 
 .slider-btn:hover {
     background: var(--secondary-color);
     color: white;
     border-color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+.slider-btn:active {
+    transform: scale(0.95);
 }
 
 .slider-dots {
