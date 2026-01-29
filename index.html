@@ -1,106 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chary E. Calapiz | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chary E. Calapiz | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- Navigation -->
-  <header class="navbar">
-    <h1 class="logo">PORTFOLIO</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">CC</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#recommendations" class="nav-link">Recommendations</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="SNOW_20250831_144052_340.jpg" alt="Profile Photo" class="profile-img">
-    <h2>Hello, I’m <span>Chary E. Calapiz</span></h2>
-    <p>IT Student | Aspiring Developer</p>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Chary E. Calapiz</h1>
+                    <p class="hero-title">Web Developer</p>
+                    <p class="hero-bio">Passionate about crafting elegant web solutions that blend creativity with functionality. I transform ideas into immersive digital experiences through clean code and innovative design.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1D5p1othcD/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/itzme_chrybaby?igsh=MWhuamZ1ZW16ZjdwaA==" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/charycalapiz05-ai" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <img src="SNOW_20250831_144052_340.jpg" alt="Chary E. Calapiz">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <h3>About Me</h3>
-    <p>
-      I am an Information Technology student with an interest in web development,
-      software installation, and basic computer troubleshooting. I enjoy learning
-      new technologies and improving my skills through practice.
-    </p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a dedicated web developer with a passion for creating seamless user experiences and robust web applications. My journey in web development has been driven by curiosity and a constant desire to learn and evolve with the ever-changing technology landscape.</p>
+                    <p>With expertise in modern web technologies, I specialize in building responsive, accessible, and performant websites that not only look great but also deliver exceptional functionality. I believe in writing clean, maintainable code and following best practices to ensure long-term project success.</p>
+                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+                    <div class="quick-facts">
+                        <div class="fact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c7a4afa6b5bea4a6aba6b7aebdf7f287a0aaa6aeabe9a4a8aa">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Cagayan de Oro, Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section gray">
-    <h3>Skills</h3>
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>Basic JavaScript</span>
-      <span>Computer Assembly</span>
-      <span>Python</span>
-      <span>MS Office</span>
-    </div>
-  </section>
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title">Education & Achievements</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - Present</div>
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <p class="institution">University of Science and Technology of Southern Philippines</p>
+                        <div class="awards">
+                            <h4>Awards & Honors:</h4>
+                            <ul>
+                                <li>Dean's Lister - Multiple Semesters</li>
+                                <li>Academic Excellence Award</li>
+                                <li>Best Capstone Project Award</li>
+                                <li>Outstanding Student in Web Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2022</div>
+                        <h3>Senior High School - STEM Track</h3>
+                        <p class="institution">Xavier University - Ateneo de Cagayan</p>
+                        <div class="awards">
+                            <h4>Awards & Honors:</h4>
+                            <ul>
+                                <li>With High Honors</li>
+                                <li>Best in Mathematics</li>
+                                <li>Leadership Excellence Award</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Education -->
-  <section id="education" class="section">
-    <h3>Education</h3>
-    <div class="card">
-      <h4>Bachelor of Science in Information Technology</h4>
-      <p>Currently Studying</p>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>HTML5 / CSS3</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>JavaScript</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>React.js</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Responsive Design</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- Projects -->
-  <section id="projects" class="section gray">
-    <h3>Projects</h3>
-    <div class="card">
-      <h4>Simple Portfolio Website</h4>
-      <p>A personal portfolio built using HTML and CSS.</p>
-    </div>
-  </section>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Node.js</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Python</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>PHP</span>
+                                <span class="skill-percent">78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>MySQL</span>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="82"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:charycalapiz05@gmail.com">charycalapiz05@gmail.com</a></p>
-  </section>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Git / GitHub</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>VS Code</span>
+                                <span class="skill-percent">93%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="93"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Figma</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Adobe XD</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- SOCIAL LINKS -->
-<section id="social" class="section">
-  <h3>Connect with Me</h3>
-  <div class="social-links">
-    <!-- Facebook -->
-    <a href="https://www.facebook.com/share/1D5p1othcD/" target="_blank" class="social-icon facebook">
-      <img src="facebook.svg" alt="Facebook Logo" class="icon">
-      Facebook
-    </a>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Problem Solving</span>
+                        <span class="tag">Team Collaboration</span>
+                        <span class="tag">Communication</span>
+                        <span class="tag">Time Management</span>
+                        <span class="tag">Adaptability</span>
+                        <span class="tag">Critical Thinking</span>
+                        <span class="tag">Attention to Detail</span>
+                        <span class="tag">Creative Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Instagram -->
-    <a href="https://www.instagram.com/itzme_chrybaby?igsh=MWhuamZ1ZW16ZjdwaA==" target="_blank" class="social-icon instagram">
-      <img src="instagram.svg" alt="Instagram Logo" class="icon">
-      Instagram
-    </a>
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="ecommerce-platform-1024x576.jpg" alt="E-Commerce Platform" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce solution with user authentication, product management, shopping cart, and payment integration. Features include real-time inventory updates and order tracking.</p>
+                    </div>
+                </div>
 
-    <!-- GitHub -->
-    <a href="https://github.com/charycalapiz05-ai" target="_blank" class="social-icon github">
-      <img src="github.svg" alt="GitHub Logo" class="icon">
-      GitHub
-    </a>
-  </div>
-</section>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="800966cc-495a-4d7f-8afe-e5f2a3e89456-cover.png" alt="Weather Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                        <h3>Weather Dashboard</h3>
+                        <p>Interactive weather application that provides real-time weather data, forecasts, and climate visualizations using third-party APIs and dynamic charts.</p>
+                    </div>
+                </div>
 
-  <footer>
-    <p>© 2026 Chary E. Calapiz</p>
-  </footer>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="tab-task-lists.jpg" alt="Task Management System" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Material-UI</span>
+                        </div>
+                        <h3>Task Management System</h3>
+                        <p>Collaborative task management application with real-time synchronization, team collaboration features, and intuitive drag-and-drop interface.</p>
+                    </div>
+                </div>
 
-</body>
-</html>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="_image.webp" alt="Portfolio Website" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3>Portfolio Website</h3>
+                        <p>Responsive portfolio website with smooth animations, interactive elements, and modern design principles. Fully optimized for all devices and screen sizes.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="All-Time_Best_Blogging_Platforms_to_Launch_Your_Company_s_Blog_Design.jpg" alt="Blog Platform" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                   
